@@ -1,0 +1,36 @@
+# Guide de configuration du proxy Bright Data
+
+Ce guide vous explique comment configurer le réseau de proxy résidentiel de Bright Data avec le scraper emploi.cm.
+
+## Prérequis
+- Compte Bright Data avec accès au réseau de proxy résidentiel
+- Informations de connexion proxy (host, port, username, password)
+
+## Configuration
+
+### 1. Créer le fichier .env
+Créez un fichier .env à la racine du projet avec :
+BRIGHT_DATA_PROXY_HOST=brd.superproxy.io
+BRIGHT_DATA_PROXY_PORT=22225
+BRIGHT_DATA_PROXY_USERNAME=brd-customer-zone-residential-username
+BRIGHT_DATA_PROXY_PASSWORD=votre_mot_de_passe
+
+### 2. Test de la configuration
+python test_proxy.py
+
+### 3. Utilisation
+python main.py
+
+## Variables d'environnement requises
+- BRIGHT_DATA_PROXY_HOST: Host du proxy Bright Data
+- BRIGHT_DATA_PROXY_PORT: Port du proxy (généralement 22225)
+- BRIGHT_DATA_PROXY_USERNAME: Nom d'utilisateur Bright Data
+- BRIGHT_DATA_PROXY_PASSWORD: Mot de passe Bright Data
+
+## Sécurité
+- Ne committez jamais le fichier .env dans Git
+- Le fichier .env est déjà dans .gitignore
+- Gardez vos informations de proxy confidentielles
+
+## Support
+Pour toute question : chrisdavebenge@gmail.com

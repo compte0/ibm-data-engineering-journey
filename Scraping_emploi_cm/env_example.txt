@@ -1,0 +1,20 @@
+# Configuration Bright Data Proxy
+# Remplacez ces valeurs par vos vraies informations de proxy
+
+# Host du proxy Bright Data
+BRIGHT_DATA_PROXY_HOST=brd.superproxy.io
+
+# Port du proxy (généralement 22225 pour le proxy résidentiel)
+BRIGHT_DATA_PROXY_PORT=22225
+
+# Nom d'utilisateur Bright Data
+BRIGHT_DATA_PROXY_USERNAME=brd-customer-zone-zone_name-username
+
+# Mot de passe Bright Data
+BRIGHT_DATA_PROXY_PASSWORD=password
+
+# Exemple de configuration complète :
+# BRIGHT_DATA_PROXY_HOST=brd.superproxy.io
+# BRIGHT_DATA_PROXY_PORT=22225
+# BRIGHT_DATA_PROXY_USERNAME=brd-customer-zone-residential-username
+# BRIGHT_DATA_PROXY_PASSWORD=votre_mot_de_passe
